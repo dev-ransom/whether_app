@@ -108,3 +108,34 @@ body{
 .hT{
     font-size: 28px;
 }
+
+.weather{
+    display: none;
+}
+
+@media only screen and (max-width: 767px){
+    body{
+        margin: 100px 20px;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 700px;
+        background  : black;
+        margin: 0;
+        padding: 40px 10px;
+    }
+
+    .weather .details .col .humidity, .wind-speed{
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+.hT{
+    font-size: 25px;
+}
+.weather .details .col img{
+    width: 25px;
+}
+
+}
