@@ -1,10 +1,11 @@
-const dropDown = document.querySelector('.dropdown');
-const showmenu = document.querySelector('.dropdown-content');
+const apiKey = '4b9b52090d23164fd44e153355922a7c';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?=&units=metric&q=kano';
 
-dropDown.addEventListener('click', dropdown);
+const searchBtn = document.querySelector('.searchBtn');
+searchBtn.addEventListener('click', getWeather);
 
-function dropdown(){
-    showmenu.classList.toggle('show-menu')
+async function getWeather(){
+    const response = await fetch(apiUrl + `&appid=${apiKey}`);
+    let data = await response.json();
+    
 }
-
-console.log(showmenu);
