@@ -12,7 +12,7 @@
 body{
     font-family: 'poppins', sans-serif;
     color: #eeefff;
-    margin: 100px;
+    padding: 100px;
 }
 
 
@@ -43,6 +43,7 @@ body{
     margin-right: 20px;
     height: 60px;
     border-radius: 30px;
+    font-size: 22px;
 }
 
 .search button{
@@ -59,6 +60,14 @@ body{
 
 .search button img{
     width: 16px;
+}
+
+.error{
+    text-align: left;
+    margin: 10px;
+    color: red;
+    text-transform: capitalize;
+    display: none;
 }
 
 .weather .weather-icon{
@@ -115,12 +124,12 @@ body{
 
 @media only screen and (max-width: 767px){
     body{
-        margin: 100px 20px;
+        padding: 100px 10px;
     }
 
     .card{
         width: 100%;
-        max-width: 700px;
+        max-width: 780px;
         background  : black;
         margin: 0;
         padding: 40px 10px;
@@ -136,6 +145,10 @@ body{
 }
 .weather .details .col img{
     width: 25px;
+}
+
+.search input{
+    width: 50%;
 }
 
 }
